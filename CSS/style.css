@@ -1,0 +1,93 @@
+/* Define your brand colors */
+:root {
+    --primary-blue: #0A4DAB;
+    --dark-blue: #143058;
+    --white: #FFFFFF;
+    --light-blue: #809CBA;
+    --light-gray: #EEEEEE;
+    --off-white: #F5F7FF;
+    --light-blue-gray: #CCD9EC;
+  }
+  
+  /* Font from Google Web Fonts */
+  /* Example with Open Sans */
+  /*
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+  */
+  
+  /* Default text styles */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--dark-blue);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif; /* Or use 'Raleway', sans-serif; */
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--primary-blue);
+  }
+  
+  /* Link stylings */
+  a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--light-blue);
+  }
+  
+  /* Button stylings */
+  .button {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--light-blue);
+  }
+  
+  /* Specific button stylings */
+  .button-read-more {
+    /* Style for "Read more" buttons in projects section */
+  }
+  
+  .button-view-cv {
+    /* Style for "View CV" button on about.html */
+  }
+  
+  .button-email {
+    /* Style for "Email" button in footer */
+  }
+  
+  /* Image styling */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Unique IDs for section blocks in HTML */
+  #hero-section {
+    /* Style for hero section */
+  }
+  
+  #work-section {
+    /* Style for work section */
+  }
+  
+  #contact-section {
+    /* Style for contact section */
+  }
+  
