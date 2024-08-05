@@ -1,0 +1,226 @@
+/* Define your brand colors */
+:root {
+    --primary-blue: #0A4DAB;
+    --dark-blue: #143058;
+    --white: #FFFFFF;
+    --light-blue: #809CBA;
+    --light-gray: #EEEEEE;
+    --off-white: #F5F7FF;
+    --light-blue-gray: #CCD9EC;
+}
+
+/* Font from Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* Default text styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--primary-blue);
+}
+
+/* Link stylings */
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--light-blue);
+}
+
+/* Button stylings */
+.button {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--light-blue);
+}
+
+/* Specific button stylings */
+.button-read-more {
+    /* Style for "Read more" buttons in projects section */
+}
+
+.button-view-cv {
+    /* Style for "View CV" button on about.html */
+}
+
+.button-email {
+    /* Style for "Email" button in footer */
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Unique IDs for section blocks in HTML */
+#hero-section {
+    background-color: var(--off-white);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#work-section {
+    background-color: var(--light-blue-gray);
+    padding: 50px 0;
+}
+
+#contact-section {
+    background-color: var(--light-gray);
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: var(--primary-blue);
+    padding: 20px 0;
+}
+
+header img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--white);
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section styling */
+section {
+    text-align: center;
+}
+
+section h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+section p {
+    font-size: 1.2em;
+}
+
+/* Container and Row classes */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Work Section styling */
+#work {
+    background-color: var(--light-blue-gray);
+    color: var(--dark-blue);
+    padding: 50px 0;
+}
+
+#work h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.project a {
+    color: var(--primary-blue);
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Footer (Contact) Section styling */
+footer {
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    color: var(--primary-blue);
+}
+
+footer a:hover {
+    color: var(--light-blue);
+}
+
+footer .container {
+    max-width: 600px;
+}
+
+footer .container img {
+    height: 24px;
+    margin: 0 5px;
+}

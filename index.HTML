@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex's Portfolio</title>
      <!-- CSS stylesheet -->
-     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="css/Style2.css"> <!--link to the CSS file -->
 </head>
 <body>
 
@@ -14,10 +14,10 @@
             <img src="placeholder_logo.png" alt="Logo">
         <nav>
             <a href="index.html">Work</a>
-            <a href="about.html">about</a>
+            <a href="about.html">About</a>
             <a href="#">Contact</a>
         </nav>
-    <div>
+    </div>
 </header>
 
 <main>
@@ -30,24 +30,22 @@
     </section>
 
     <!-- Work Section -->
-    <section id="work"><!--orange /section -->
-        <div><!--yellow / container -->
+    <section id="work-section">
+        <div class="container">
             <h2>My Work</h2>
-            <div class="project"><!--Green / Row -->
-                </div><!-- Teal / column -->
+            <div class="project">
+                <div class="column">
                     <picture>
-                        <!-- Placeholder image for small screens -->
                         <source media="(max-width: 600px)" srcset="">
-                        <!-- Placeholder image for large screens -->
                         <source media="(min-width: 601px)" srcset="Careerlexiconphoto600px.png">
                         <img src="Images/MentorMephoto600px.png" alt="Mentor Me Project">
                     </picture>
                 </div>
-                </div><!-- Teal / column -->
+                <div class="column">
                     <h3>Mentor Me Project</h3>
-                    <p>During my UX Design course with CareerFoundry, I initiated MentorMe as my 2nd design project. Employing the Design Thinking Process, I crafted low-mid-high fidelity prototypes and performed user testing to pinpoint areas for design enhancements. </p>
-                    <a href="mentorme.html">View Project</a>
-                </section>
+                    <p>During my UX Design course with CareerFoundry, I initiated MentorMe as my 2nd design project. Employing the Design Thinking Process, I crafted low-mid-high fidelity prototypes and performed user testing to pinpoint areas for design enhancements.</p>
+                    <a class="button button-read-more" href="mentorme.html">View Project</a>
+                </div>
             </div>
         </div>
     </section>
