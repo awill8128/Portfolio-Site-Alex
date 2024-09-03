@@ -7,18 +7,24 @@
     <title>Alex's Portfolio</title>
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="css/Style2.css"> <!--link to the CSS file -->
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
     <header><!--orange /section -->
-        <div class="container"><!--yellow /container -->
-            <img src="Images/Name_logo.png" alt="Logo">
-            <nav>
-                <a href="index.html">Work</a>
-                <a href="about.html">About</a>
-                <a href="#">Contact</a>
+        <div class="container">
+            <img src="Images/Name_logo.png" alt="Logo" class="logo">
+            <nav class="navtoggle">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </nav>
+            <button class="menu-toggle" onclick="menuToggle()">☰</button>
         </div>
     </header>
 
@@ -95,7 +101,9 @@
         </div>
     </footer>
     <!-- Link to scripts.js -->
-    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="Javascript/scripts.js"></script>
 </body>
 
 </html>
