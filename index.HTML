@@ -15,16 +15,18 @@
 
     <header><!--orange /section -->
         <div class="container">
-            <img src="Images/Name_logo.png" alt="Logo" class="logo">
-            <nav class="navtoggle">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="menu-toggle" onclick="menuToggle()">☰</button>
+            <div class="navtoggle" id="myNavtoggle">
+                <img src="Images/Name_logo.png" alt="Logo" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 

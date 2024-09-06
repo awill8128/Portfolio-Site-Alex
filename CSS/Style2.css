@@ -123,11 +123,6 @@ header img {
     vertical-align: middle;
 }
 
-nav {
-    width: auto;
-    margin-top: 10px;
-}
-
 nav a {
     color: var(--white);
     font-size: 16px;
@@ -136,7 +131,43 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+/* Base navigation styling */
+nav {
+    width: auto;
+    float: right;
+    margin-top: 10px;
+}
+/* Hide menu items on mobile by default */
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle li {
+    list-style-type: none;
+}
 
+/* Style for responsive navigation */
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+  } 
 /* Hero Section styling */
 #hero {
     text-align: center;
@@ -390,7 +421,18 @@ Medium devices (640px and larger)
         float: left;
         padding: 10px;
     }
-
+    nav > ul > li {
+        display: inline-block;
+      }
+      .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+      .navtoggle li:last-child {
+        display: none;
+      }
+      nav > ul {
+        margin: .3em 0;
+      }     
     .row::after {
         content: "";
         clear: both;
@@ -511,35 +553,4 @@ Large devices (1024px or larger)
     .col-lg-12 {
         width: 100%;
     }
-}
-/* Base navigation styling */
-nav {
-    width: auto;
-    float: right;
-    margin-top: 10px;
-}
-
-/* Hide menu items on mobile by default */
-.navtoggle li:not(:last-child) {
-    display: none;
-}
-
-/* Show complete menu when .responsive class is toggled */
-.navtoggle.responsive li {
-    display: block;
-}
-
-/* Style for responsive navigation */
-.navtoggle.responsive nav {
-    padding: 24px 0 0;
-}
-
-.navtoggle.responsive li {
-    display: block;
-    padding: 10px 0;
-    border-top: 1px solid rgba(255, 127, 80, 0.5);
-}
-
-.navtoggle.responsive li:last-child {
-    padding: 0 0 10px;
 }
