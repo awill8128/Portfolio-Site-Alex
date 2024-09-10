@@ -68,19 +68,6 @@ a:hover {
     color: #FFFFFF
 }
 
-/* Specific button stylings */
-.button-read-more {
-    /* Style for "Read more" buttons in projects section */
-}
-
-.button-view-cv {
-    /* Style for "View CV" button on about.html */
-}
-
-.button-email {
-    /* Style for "Email" button in footer */
-}
-
 /* Image styling */
 img {
     max-width: 100%;
@@ -190,8 +177,6 @@ nav {
     margin: 0 auto;
     padding: 0 15px;
 }
-
-.row {}
 
 .column {
     flex: 1;
